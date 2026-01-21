@@ -1,6 +1,8 @@
 package edu.cmu.cs.cs214.lab02;
 
+import edu.cmu.cs.cs214.lab02.shapes.Circle;
 import edu.cmu.cs.cs214.lab02.shapes.Rectangle;
+import edu.cmu.cs.cs214.lab02.shapes.Square;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,5 +11,13 @@ public class Main {
         Renderer renderer = new Renderer(rectangle);
 
         renderer.draw();
+
+        Circle circle = new Circle(2);
+        Renderer renderer2 = new Renderer(circle);
+        renderer2.draw();
+
+        Square square = new Square(2);
+        Renderer renderer3 = new Renderer(square);
+        renderer3.draw();
     }
 }
